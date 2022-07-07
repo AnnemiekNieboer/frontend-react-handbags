@@ -1,22 +1,20 @@
 import React from "react";
 
-export function TileImageRight({header, paragraph1, paragraph2, altText, image}) {
+export function TileImageRight({header, altText, image, children}) {
     return (
         <>
             <section>
                 <h2>{header}</h2>
-                <p>{paragraph1}</p>
-                <p>{paragraph2}</p>
+                {children}
             </section>
             <section>
                 <img alt={altText} src={image}/>
             </section>
         </>
-
     )
 }
 
-export function TileImageLeft({altText, image, header, paragraph1, paragraph2}) {
+export function TileImageLeft({altText, image, header, children}) {
     return (
         <>
             <section>
@@ -24,8 +22,7 @@ export function TileImageLeft({altText, image, header, paragraph1, paragraph2}) 
             </section>
             <section>
                 <h2>{header}</h2>
-                <p>{paragraph1}</p>
-                <p>{paragraph2}</p>
+                {children}
             </section>
         </>
     )

@@ -61,20 +61,28 @@ function App() {
             <footer>
                 <TileImageRight
                     header="The brand"
-                    paragraph1="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem fugiat hic nam omnis
-                        quaerat repellendus totam unde voluptatem voluptatibus."
-                    paragraph2="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem fugiat hic nam omnis
-                        quaerat repellendus totam unde voluptatem voluptatibus."
                     altText="the brand"
                     image={brandImage}
-                />
+                >
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem fugiat hic nam omnis
+                        quaerat repellendus totam unde voluptatem voluptatibus.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem fugiat hic nam omnis
+                        quaerat repellendus totam unde voluptatem voluptatibus.
+                    </p>
+                </TileImageRight>
                 <TileImageLeft
-                header="Our story"
-                paragraph1="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem fugiat hic nam omnis
-                        quaerat repellendus totam unde voluptatem voluptatibus."
-                altText="our story"
-                image={storyImage}
-                />
+                    header="Our story"
+                    altText="our story"
+                    image={storyImage}
+                >
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A exercitationem fugiat hic nam omnis
+                        quaerat repellendus totam unde voluptatem voluptatibus.
+                    </p>
+                </TileImageLeft>
             </footer>
         </>
 
